@@ -12,9 +12,7 @@
       }
       body {
         counter-reset: a;
-        color: #ababab;
         margin: 0;
-        background: #151a1f;
       }
       main {
         max-width: 40rem;
@@ -23,42 +21,21 @@
       }
       h1 {
         position: relative;
-        color: #f3f3f3;
         font-size: 2rem;
         font-weight: inherit;
         margin: 2.5rem 0 0.375rem;
       }
-      h1:before {
-        content: "#";
-        position: absolute;
-        right: calc(100% + 0.5rem);
-        color: #484848;
-      }
       h2 {
         position: relative;
-        color: #f3f3f3;
         font-size: 1.25rem;
         font-weight: bold;
         margin: 2.5rem 0 0.875rem;
       }
-      h2:before {
-        content: "##";
-        position: absolute;
-        right: calc(100% + 0.5rem);
-        color: #484848;
-      }
       h3 {
         position: relative;
-        color: #f3f3f3;
         font-size: 1rem;
         font-weight: bold;
         margin: 0.875rem 0;
-      }
-      h3:before {
-        content: "###";
-        position: absolute;
-        right: calc(100% + 0.5rem);
-        color: #484848;
       }
       h1 + *,
       h2 + *,
@@ -69,29 +46,11 @@
         font-size: 1rem;
         hyphens: auto;
       }
-      code {
-        color: #f3f3f3;
-      }
-      code:before,
-      code:after {
-        content: "`";
-        color: #484848;
-      }
       a {
         counter-increment: a;
-        color: #f3f3f3;
         text-decoration: none;
       }
-      p a:before {
-        content: "[";
-        color: #484848;
-      }
-      p a:after {
-        content: "][" counter(a) "]";
-        color: #484848;
-      }
       strong {
-        color: #f3f3f3;
         font-weight: bold;
       }
       ol {
@@ -103,33 +62,12 @@
         counter-increment: ol;
         position: relative;
       }
-      ol li:before {
-        content: "[" counter(ol) "]:";
-        position: absolute;
-        right: calc(100% + 0.5rem);
-        color: #484848;
-      }
-      ol a {
-        color: #ababab;
-      }
       hr {
         width: 1rem;
         margin: 2.5rem 0;
         background: none;
         border: none;
-        border-top: 1px dotted #484848;
-      }
-      blockquote {
-        color: #484848;
-        margin: 0;
-      }
-      blockquote:before {
-        content: "/*";
-        margin-right: 0.15rem;
-      }
-      blockquote:after {
-        content: "*/";
-        margin-left: 0.15rem;
+        border-top: 1px dotted #000;
       }
       blockquote strong {
         color: inherit;
@@ -140,6 +78,85 @@
         margin: 7.5rem 0 2.5rem;
         pointer-events: none;
       }
+      @media screen {
+        body {
+          color: #ababab;
+          background: #151a1f;
+        }
+        h1 {
+          color: #f3f3f3;
+        }
+        h1:before {
+          content: "#";
+          position: absolute;
+          right: calc(100% + 0.5rem);
+          color: #484848;
+        }
+        h2 {
+          color: #f3f3f3;
+        }
+        h2:before {
+          content: "##";
+          position: absolute;
+          right: calc(100% + 0.5rem);
+          color: #484848;
+        }
+        h3 {
+          color: #f3f3f3;
+        }
+        h3:before {
+          content: "###";
+          position: absolute;
+          right: calc(100% + 0.5rem);
+          color: #484848;
+        }
+        code {
+          color: #f3f3f3;
+        }
+        code:before,
+        code:after {
+          content: "`";
+          color: #484848;
+        }
+        a {
+          color: #f3f3f3;
+        }
+        p a:before {
+          content: "[";
+          color: #484848;
+        }
+        p a:after {
+          content: "][" counter(a) "]";
+          color: #484848;
+        }
+        strong {
+          color: #f3f3f3;
+        }
+        ol li:before {
+          content: "[" counter(ol) "]:";
+          position: absolute;
+          right: calc(100% + 0.5rem);
+          color: #484848;
+        }
+        ol a {
+          color: #ababab;
+        }
+        hr {
+          border-top: 1px dotted #484848;
+        }
+        blockquote {
+          color: #484848;
+          margin: 0;
+        }
+        blockquote:before {
+          content: "/*";
+          margin-right: 0.15rem;
+        }
+        blockquote:after {
+          content: "*/";
+          margin-left: 0.15rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -148,30 +165,23 @@
       <p>
         <strong>Zeke</strong> is an experienced full-stack developer that is currently <strong>for-hire</strong>, and actively looking for a full-time product-based remote position. You can reach out to him directly via <a href="mailto:ezekg@yahoo.com">email</a> or <a href="tel:9407271265">phone</a></li> with job inquiries.
       </p>
-
       <blockquote>
         At this time Zeke is <strong>only</strong> interested in remote work--though if you have an offer in mind that you think is <em>too good to pass up</em>, feel free to reach out!
       </blockquote>
-
       <hr>
-
       <h2>Projects</h2>
       <p>
         Aside from his open-source projects such as <a href="https://github.com/ezekg/xo"><code>xo</code></a>, <a href="https://github.com/ezekg/tj"><code>tj</code></a>, <a href="https://github.com/ezekg/git-hound"><code>git-hound</code></a> and <a href="https://github.com/ezekg/swa-dashboard"><code>swa</code></a>, you can find <strong>Zeke</strong>'s favorite adventures below.
       </p>
-
       <h3>Keygen</h3>
       <p>
         <strong>Zeke</strong> founded <a href="https://keygen.sh">Keygen</a> in October 2016 after having seen first-hand that <a href="https://hackernoon.com/finding-issues-and-guessing-solutions-43e6b7ed823e">the current state of software licensing sucks</a>. Instead of being content with the suck, he built a <em>dead-simple software licensing REST API for developers.</em> Keygen is built on top of technologies like Rails, PostgreSQL, Sidekiq and Ember.
       </p>
-
       <h3>Theme Juice</h3>
       <p>
         <strong>Zeke</strong> co-founded <a href="https://www.themejuice.it">Theme Juice</a> in November 2015, which he worked on until early 2017 when he decided to focus his time on other projects. Theme Juice is a Mac app that can spin up a local WordPress development environment at the click of a button. The app is built with tech such as Electron, Vagrant and React.
       </p>
-
       <hr>
-
       <h2>History</h2>
       <p>
         Before teaching himself to code, <strong>Zeke</strong> started his professional career as a <a href="https://dribbble.com/ezekielg">graphic designer</a>. However, once he quickly picked up frontend development--<em>he was hooked</em>. From there he rapidly began to delve deeper and deeper into the field of computer science and grow his skills as a developer.
@@ -179,18 +189,14 @@
       <p>
         Nowadays you can find him enjoying the solitude of <em>backend development</em>, though he is proficient throughout the entire web stack and is highly interested in technologies like React.
       </p>
-
       <h3>Produce Results (11/2013 - 05/2017)</h3>
       <p>
         <strong>Zeke</strong> lead a small development team, handling all-things-web throughout the company. He built and maintained web apps built on Ruby/Rails, PHP, Node, as well as working on countless WordPress and Magento websites.
       </p>
-
       <blockquote>
         Before transitioning into development, <strong>Zeke</strong> had been running his own freelance graphic design business for several years.
       </blockquote>
-
       <hr>
-
       <ol>
         <li><a href="mailto:ezekg@yahoo.com">mailto:ezekg@yahoo.com</a></li>
         <li><a href="tel:9407271265">tel:9407271265</a></li>
@@ -203,7 +209,6 @@
         <li><a href="https://www.themejuice.it">https://www.themejuice.it</a></li>
         <li><a href="https://dribbble.com/ezekielg">https://dribbble.com/ezekielg</a></li>
       </ol>
-
       <span class="zeke-is-on-fire">
         🔥
       </span>
